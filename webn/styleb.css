@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'Brandon';
+    src: url(fonts/Brandon_reg.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(fonts/Brandon_med.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(fonts/Brandon_thin.otf);
+    font-weight: 100;
+}
+
+
+*{
+	font-family:"Brandon",Helvetica;
+}
+
+/*all text in the "brandon" font, if can't be found , use Helvetica*/
+
+html,body{
+
+	height:100%;
+	position:relative;
+
+}
+
+/*forever full height*/
+#background{
+
+	width: 100%;
+	height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -1;  
+}
+
+nav{
+
+	margin-top: 10px;
+}
+
+.container{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vertical-align{
+
+	vertical-align: middle;
+}
+
+.inline-block{
+
+	display:inline-block;
+}
+
+.center{
+	text-align: center;
+}
+
+
+.round{
+
+	border-radius: 50%;
+}
+
+.left{
+	float:left;
+	width:50%;
+	position: relative;
+}
+
+
+.left span {
+/*    position: absolute;
+    top: 50%;
+    left: 50%;*/
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*do translating with respect to origin of the text*/
+
+
+
+    background-color: red;
+    padding: 10px;
+}
+
+.left img{
+	width: 100%;
+/*	margin-left: 25%;
+	margin-right: 25%;*/
+}
+
+.left h2, .left p{
+
+	width:75%;
+	float:left;
+}
+
+.right{
+	float:right;
+	width:50%;
+}
+
+.right img{
+	width: 50%;
+	margin-left: :25%;
+	margin-left:25%;
+}
+
+.right h2, .right p{
+
+	width:75%;
+	float:left;
+}
+
+.row{
+
+	width:80%;
+	padding: 50px;
+	clear: both;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+
+.row h2{
+
+	font-size: :48px;
+}
+
+#logo-wrapper{
+
+	width: 19%;
+/*	display: inline-block;
+*/}
+
+
+#logo{
+    width:100px;
+	border-radius: 50%
+
+}
+
+
+#menu-wrapper{
+	width:80%;
+	text-align: right;
+/*	display: inline-block;
+*/}
+
+#menu li{
+	display: inline-block;
+	color:#d84f49;
+	font-size: 24px;
+}
+
+#menu a{
+
+	padding: 0 30px;
+}
+
+#menu li:hover{
+	color:white;
+	cursor:pointer;
+
+}
+
+#slogan{
+	color:#333;
+	margin-top:80px;
+}
+#slogan h1{
+	font-weight: normal;
+	font-size: 96px
+
+}
+
+#slogan h2{
+	font-weight: normal;
+	font-size: 48px
+}
+
+
+
+
+footer{
+
+	width:100%;
+	/*background-color: #333;*/
+    padding:10px 0;
+    color:#e0e0e0;
+    text-align:center;
+    /*position:absolute;*/
+    bottom:-110px;
+
+    /*position: fixe;*/
+    /*top: 10px*/
+
+}
+
+
+/*clear float, make footer sit below*/
+.clearfloat{
+
+	clear: both;
+}
+
+
+
+form label, form input{
+
+	display:block;
+}
+
+form label{
+
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+
+form input, form textarea, form button{
+	width:100%;
+
+	height:52px;
+
+	border-radius: 10px;
+
+	border:2px solid #b2b2b2;
+}
+
+form textarea{
+
+	height:200px;
+}
+
+form button{
+
+	margin-top:15px;
+	color:white;
+	font-size:18px;
+	background-color:#43b3ff;
+	border:2px solid #3680b2;
+}
+
+
+@media(max-width: 500px){
+    form button{
+        background-color: red;
+    }
+}
+
+
+form{
+
+	width: 30%;
+	min-width: 300px;
+	margin-left:35%;
+	margin-right:35%;
+	margin-bottom: 10px;
+
+}
+
+
+#contact-me{
+	font-size:60px;
+}
+
+
+#user-container{
+
+	padding: 20px;
+}
+
+
+.user{
+
+	background-color: rgba(255,255,255,0.5);
+	border: 5px solid #e0e0e0;
+
+	 display: inline-block;
+	 padding: 15px;
+}
+
+
+
+
+.user p span{
+
+	background-color: #26ABFF;
+	border-radius: 5px;
+	margin-top: 5px;
+    margin-right:5px;
+    margin-left:5px;
+	
+}
+/*form{
+
+	width:30%;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+
+label{
+
+	font-size: 18px;
+	margin-top: 15px;
+}*/
+
+
+/*.left{
+    float:left;
+    width: 50%;
+    position: relative;
+}
+.left span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    padding: 10px;
+}*/
+/*.right h2, .right p{
+    width: 75%;
+    float: left;
+}*/
+/*.left img{*/
+/*    width: 100%;
+*/    /*margin-left: 25%;*/
+    /*margin-right:25%;
+/*}*/
+.search-input, .search-btn{
+
+	padding:10px;
+	font-size:1.5rem;
+	margin:10px;
+	margin-top: 20px;
+	margin-left:20px;
+
+	
+}
+
+
+.search-btn{
+
+	background-color: #26ABFF;
+	color: white;
+
+}
+
